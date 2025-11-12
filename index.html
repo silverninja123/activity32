@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classes in js</title>
+</head>
+<body>
+    <h2>Car</h2>
+    <p id="car1"></p>
+    <p id="car2"></p>
+    <script>
+        class Car{
+            constructor(brand,type,length,color){
+                this.brand=brand
+                this.type=type
+                this.length=length
+                this.color=color
+            }
+            start(){
+                console.log("the car just started")
+            }
+            stop(){
+                cosole.log("the car is now stopped")
+            }
+            speed(){
+                console.log("the car speed is 130km/h")
+            }
+        }
+        carA=new Car("BMW","sports","150cm","black")
+        document.getElementById("car1").innerHTML=carA.color
+        carA.start()
+    </script>
+</body>
+</html>
